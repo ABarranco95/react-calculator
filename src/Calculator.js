@@ -16,7 +16,7 @@ class Calculator extends Component {
   }
 
   addNum = () => {
-    let addNums = this.state.num1 + this.state.num2
+    let addNums = parseInt(this.state.num1) + parseInt(this.state.num2)
 
     this.setState({result: addNums})
   }
@@ -42,7 +42,7 @@ class Calculator extends Component {
             name='num2'
             placeholder='Second number'
             value={this.setState.num2}
-            onChange={ (e) => this.setNum(e, 'num1') }
+            onChange={ (e) => this.setNum(e, 'num2') }
           />
 
 
